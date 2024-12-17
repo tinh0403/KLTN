@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="image/2.png" type="image/x-icon">
+    <title>KLTN_IoT_Lop Hoc</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <br>
+            <p class="text1">TRƯỜNG ĐẠI HỌC SƯ PHẠM KỸ THUẬT THÀNH PHỐ HỒ CHÍ MINH</p>
+            <p class="text1">KHOA ĐIỆN - ĐIỆN TỬ</p>
+            <p class="text1">BỘ MÔN KỸ THUẬT MÁY TÍNH - VIỄN THÔNG</p>
+            <img src="image/logo1.png" id="logo">
+            <p class="text2">ĐỒ ÁN TỐT NGHIỆP</p>
+            <br>
+            <p class="text3">THIẾT KẾ VÀ THI CÔNG MÔ HÌNH ỨNG DỤNG IOT VÀO VIỆC ĐIỀU KHIỂN CÁC THIẾT BỊ TRONG PHÒNG HỌC</p>
+            <br>
+            <br>
+            <div id="ten1">
+                <h1>SVTH: TRẦN QUỐC TỊNH</h1>
+                <h2>MSSV: 20161384</h2>
+            </div>
+            <div id="ten2">
+                <h1>SVTH: NGÔ ĐỨC LONG</h1>
+                <h2>MSSV: 20161333</h2>
+            </div>
+            <p class="text4">KHÓA: 2020</p>
+            <p class="text4">Ngành: CNKT Điện tử - Viễn thông</p>
+            <p class="text4">GVHD: Ths. NGUYỄN NGÔ LÂM</p>
+        </div>
+        <!-- end header -->
+        <div id="main-content">
+            <div id="content">
+                <div id="thietbi1">
+                    <div id="quat1">
+                        <h1><img src="image/fan_off.jpg" id="quat11"></h1>
+                        <h3>Quạt 1</h3>
+                        <label class="switch">
+                            <input type="checkbox" id="myCheckbox1" onchange="toggleCheck1()">
+                            <span class="slider"></span>
+                            <span class="text on">On</span>
+                            <span class="text off">Off</span>
+                        </label>
+                        <p class="state">State:<span id="state1"></span></p>
+                    </div>
+                    <div id="quat2">
+                        <h1><img src="image/fan_off.jpg" id="quat22"></h1>
+                        <h3>Quạt 2</h3>
+                        <label class="switch">
+                            <input type="checkbox" id="myCheckbox2" onchange="toggleCheck2()">
+                            <span class="slider"></span>
+                            <span class="text on">On</span>
+                            <span class="text off">Off</span>
+                        </label>
+                        <p class="state">State:<span id="state2"></span></p>
+                    </div>
+                </div>
+                <div id="thietbi2">
+                    <div id="den1">
+                        <h1><img src="image/led_off.png" id="den11"></h1>
+                        <h3>Đèn 1</h3>
+                        <label class="switch">
+                            <input type="checkbox" id="myCheckbox3" onchange="toggleCheck3()">
+                            <span class="slider"></span>
+                            <span class="text on">On</span>
+                            <span class="text off">Off</span>
+                        </label>
+                        <p class="state">State:<span id="state3"></span></p>
+                    </div>
+                    <div id="den2">
+                        <h1><img src="image/led_off.png" id="den22"></h1>
+                        <h3>Đèn 2</h3>
+                        <label class="switch">
+                            <input type="checkbox" id="myCheckbox4" onchange="toggleCheck4()">
+                            <span class="slider"></span>
+                            <span class="text on">On</span>
+                            <span class="text off">Off</span>
+                        </label>
+                        <p class="state">State:<span id="state4"></span></p>
+                    </div>
+                </div>
+                <div id="thietbi3">
+                    <div id="den3">
+                        <h1><img src="image/led_off.png" id="den33"></h1>
+                        <h3>Đèn 3</h3>
+                        <label class="switch">
+                            <input type="checkbox" id="myCheckbox5" onchange="toggleCheck5()">
+                            <span class="slider"></span>
+                            <span class="text on">On</span>
+                            <span class="text off">Off</span>
+                        </label>
+                        <p class="state">State:<span id="state5"></span></p>
+                    </div>
+                    <div id="den4">
+                        <h1><img src="image/led_off.png" id="den44"></h1>
+                        <h3>Đèn 4</h3>
+                        <label class="switch">
+                            <input type="checkbox" id="myCheckbox6" onchange="toggleCheck6()">
+                            <span class="slider"></span>
+                            <span class="text on">On</span>
+                            <span class="text off">Off</span>
+                        </label>
+                        <p class="state">State:<span id="state6"></span></p>
+                    </div>
+                </div>
+                <div id="thietbi4">
+                    <!-- <div id="den5">
+                        <h1><img src="image/led_off.png" id="den55"></h1>
+                        <h3>Đèn 5</h3>
+                        <p class="state">State:<span id="state7"></span></p>
+                    </div> -->
+                    <div id="quat3">
+                        <h1><img src="image/fan_off.jpg"; id="quat33"></h1>
+                        <h3>Quạt 3</h3>
+                        <p class="state">State:<span id="state8"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <iframe id="excel" width="700px" height="500px" framborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT02Ss6UCAXfBK1aIEPoudjynsXJV772wqHy7LXBv85nv3Q8zAaWIKjZvboOkDdo42g8uqgw_VwGhsn/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=true"></iframe>
+        </div>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+
+<script>
+const firebaseConfig = {
+  apiKey: "AIzaSyDeptJdopNqNt-KkEb-81OUU8LSL-o9254",
+  authDomain: "kltn2025-f323a.firebaseapp.com",
+  databaseURL: "https://kltn2025-f323a-default-rtdb.firebaseio.com",
+  projectId: "kltn2025-f323a",
+  storageBucket: "kltn2025-f323a.appspot.com",
+  messagingSenderId: "160426671144",
+  appId: "1:160426671144:web:1f6dbf5c799b973a79491d",
+  measurementId: "G-Y14LJ1P692"
+};
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    const db = firebase.firestore();
+</script>
+
+
+<script src="function.js"></script>
+
+</body>
+</html>
